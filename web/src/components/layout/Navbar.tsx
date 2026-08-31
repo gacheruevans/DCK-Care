@@ -62,7 +62,7 @@ export default function Navbar() {
           borderBottom: isScrolled ? "none" : "1px solid var(--neutral-200)",
         }}
       >
-        <nav className="container-dck flex items-center justify-between" style={{ height: "4.5rem" }} aria-label="Primary Navigation">
+        <nav className="container-dck flex items-center justify-between" style={{ height: "6rem" }} aria-label="Primary Navigation">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0" aria-label="DCK Care Ltd — Home">
             <Image
@@ -70,7 +70,7 @@ export default function Navbar() {
               alt="DCK Care Ltd logo"
               width={160}
               height={83}
-              style={{ height: "36px", width: "auto", maxHeight: "36px" }}
+              style={{ height: "64px", width: "auto", maxHeight: "64px" }}
               priority
             />
           </Link>
