@@ -7,6 +7,7 @@ import {
   TRUST_STATS,
 } from "@/lib/constants";
 import ScrollAnimator from "@/components/ui/ScrollAnimator";
+import HeroSlider from "@/components/home/HeroSlider";
 
 /* ========================================
    Hero Section
@@ -15,39 +16,10 @@ function HeroSection() {
   return (
     <section
       className="relative flex items-center justify-center overflow-hidden"
-      style={{
-        minHeight: "85vh",
-        background: "linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%)",
-      }}
+      style={{ minHeight: "85vh" }}
     >
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div
-          className="absolute rounded-full opacity-10"
-          style={{
-            width: "600px",
-            height: "600px",
-            top: "-200px",
-            right: "-200px",
-            background: "var(--secondary)",
-          }}
-        />
-        <div
-          className="absolute rounded-full opacity-5"
-          style={{
-            width: "400px",
-            height: "400px",
-            bottom: "-100px",
-            left: "-100px",
-            background: "#fff",
-          }}
-        />
-        {/* Subtle dot pattern */}
-        <div className="absolute inset-0 opacity-[0.04]" style={{
-          backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)",
-          backgroundSize: "30px 30px",
-        }} />
-      </div>
+      {/* Image Slider Background */}
+      <HeroSlider />
 
       <div className="container-dck relative z-10 py-20 text-center">
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-6">
@@ -88,7 +60,7 @@ function HeroSection() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mt-2">
-            <Link href="/services" className="btn btn-secondary  btn-lg">
+            <Link href="/services" className="btn btn-secondary btn-lg">
               Our Services
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
             </Link>
@@ -100,7 +72,7 @@ function HeroSection() {
       </div>
 
       {/* Bottom wave */}
-      <div className="absolute bottom-0 left-0 right-0">
+      <div className="absolute bottom-0 left-0 right-0 z-10">
         <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
           <path d="M0 80V40C240 0 480 0 720 40C960 80 1200 80 1440 40V80H0Z" fill="white" />
         </svg>
