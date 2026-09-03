@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer style={{ background: "var(--neutral-300)", color: "var(--neutral-300)" }}>
+    <footer style={{ background: "var(--neutral-100)", color: "var(--neutral-300)" }}>
       {/* Main Footer */}
       <div className="container-dck" style={{ paddingTop: "4rem", paddingBottom: "3rem" }}>
         <div className="grid gap-10" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-base font-semibold mb-4" style={{ color: "var(--primary)" }}>Quick Links</h4>
+            <h4 className="text-base font-semibold mb-4 py-4" style={{ color: "var(--primary)" }}>Quick Links</h4>
             <ul className="flex flex-col gap-2.5">
               {NAV_LINKS.filter(l => !("children" in l)).map((link) => (
                 <li key={link.href}>
@@ -81,7 +81,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-base font-semibold mb-4" style={{ color: "var(--primary)" }}>Our Services</h4>
+            <h4 className="text-base font-semibold mb-4 py-4" style={{ color: "var(--primary)" }}>Our Services</h4>
             <ul className="flex flex-col gap-2.5">
               {SERVICES.slice(0, 6).map((service) => (
                 <li key={service.slug}>
@@ -112,7 +112,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-base font-semibold mb-4" style={{ color: "var(--primary)" }}>Contact Us</h4>
+            <h4 className="text-base font-semibold mb-4 py-4" style={{ color: "var(--primary)" }}>Contact Us</h4>
             <ul className="flex flex-col gap-4">
               <li>
                 <a href={`tel:${SITE.phone.replace(/\s/g, "")}`} className="flex items-start gap-3 group">
@@ -120,7 +120,7 @@ export default function Footer() {
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-dark)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                   </span>
                   <div>
-                    <span className="block text-sm font-medium" style={{ color: "var(--secondary-dark)" }}>Call Us - {SITE.phone}</span>
+                    <span className="block text-sm font-medium mt-2" style={{ color: "var(--secondary-dark)" }}>Call Us - {SITE.phone}</span>
                   </div>
                 </a>
               </li>
@@ -130,7 +130,7 @@ export default function Footer() {
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-dark)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
                   </span>
                   <div>
-                    <span className="block text-sm font-medium" style={{ color: "var(--secondary-dark)" }}>{SITE.email}</span>
+                    <span className="block text-sm font-medium mt-2" style={{ color: "var(--secondary-dark)" }}>{SITE.email}</span>
                   </div>
                 </a>
               </li>
@@ -150,7 +150,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div style={{ borderTop: "1px solid var(--neutral-800)" }}>
+      <div style={{ borderTop: "1px solid var(--neutral-200)" }}>
         <div className="container-dck flex flex-col sm:flex-row items-center justify-between gap-3 py-5">
           <p className="text-xs" style={{ color: "var(--neutral-500)" }}>
             © {currentYear} {SITE.name}. All rights reserved.

@@ -56,7 +56,7 @@ export default function Navbar() {
       <header
         className="sticky top-0 z-50 transition-all"
         style={{
-          background: isScrolled ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,1)",
+          background: isScrolled ? "#fffffff2" : "#ffffffff",
           backdropFilter: isScrolled ? "blur(12px)" : "none",
           boxShadow: isScrolled ? "var(--shadow-md)" : "none",
           borderBottom: isScrolled ? "none" : "1px solid var(--neutral-200)",
@@ -92,11 +92,11 @@ export default function Navbar() {
                     href={link.href}
                     className="flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
                     style={{
-                      color: isActive ? "var(--primary)" : "var(--neutral-700)",
-                      backgroundColor: isActive ? "var(--primary-50)" : "transparent",
+                      color: isActive ? "var(--neutral-white)" : "var(--neutral-700)",
+                      backgroundColor: isActive ? "var(--secondary-light)" : "transparent",
                     }}
                     onMouseEnter={(e) => {
-                      if (!isActive) e.currentTarget.style.color = "var(--primary)";
+                      if (!isActive) e.currentTarget.style.color = "var(--secondary-light)";
                     }}
                     onMouseLeave={(e) => {
                       if (!isActive) e.currentTarget.style.color = "var(--neutral-700)";
@@ -115,7 +115,7 @@ export default function Navbar() {
                     <div
                       className="absolute top-full left-0 min-w-[260px] py-2 rounded-xl"
                       style={{
-                        background: "#fff",
+                        background: "var(--neutral-white)",
                         boxShadow: "var(--shadow-xl)",
                         border: "1px solid var(--neutral-200)",
                         animation: "fadeIn 0.15s ease-out",
@@ -135,7 +135,7 @@ export default function Navbar() {
                             onMouseEnter={(e) => {
                               if (!isChildActive) {
                                 e.currentTarget.style.backgroundColor = "var(--neutral-50)";
-                                e.currentTarget.style.color = "var(--primary)";
+                                e.currentTarget.style.color = "var(--secondary-light)";
                               }
                             }}
                             onMouseLeave={(e) => {

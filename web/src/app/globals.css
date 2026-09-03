@@ -19,12 +19,14 @@
   --secondary-dark: #c3c314;
 
   /* Neutrals */
+  --neutral-white: #fff;
   --neutral-50: #FAFAF9;
-  --neutral-100: #F5F5F4;
+  --neutral-100: #fdfbf7;
   --neutral-200: #E7E5E4;
   --neutral-300: #D6D3D1;
   --neutral-400: #A8A29E;
   --neutral-500: #78716C;
+  /* # */
   --neutral-600: #57534E;
   --neutral-700: #44403C;
   --neutral-800: #292524;
@@ -238,6 +240,7 @@ img {
 
 .btn-white:hover {
   background: var(--neutral-100);
+  color: var(--secondary);
   transform: translateY(-1px);
   box-shadow: var(--shadow-lg);
 }
@@ -347,4 +350,31 @@ img {
 
 .skip-to-content:focus {
   left: 0;
+}
+
+/* ================================
+   Partner Logos
+   ================================ */
+
+.partner-logo {
+  transition: transform var(--transition-base);
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.partner-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: filter var(--transition-base), opacity var(--transition-base);
+}
+
+.partner-logo:hover .partner-logo-img {
+  filter: grayscale(0%);
+  opacity: 1;
 }

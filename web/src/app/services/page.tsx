@@ -27,7 +27,7 @@ export default function ServicesPage() {
         <div className="container-dck">
           <ScrollAnimator animation="fade-in-up">
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2>Discover Our Range of Care Services</h2>
+              <h2 style={{ color: "var(--secondary-light)" }}>Discover Our Range of Care Services</h2>
               <p className="mt-4" style={{ color: "var(--neutral-600)" }}>
                 At DCK Care Ltd, we offer a comprehensive suite of home care services designed to
                 support individuals at every stage of their care journey.
@@ -51,7 +51,7 @@ export default function ServicesPage() {
                         {service.icon}
                       </span>
                     </div>
-                    <h3 className="text-lg font-semibold group-hover:text-[color:var(--primary)] transition-colors">
+                    <h3 className="text-lg font-semibold group-hover:text-[color:var(--primary)] transition-colors" style={{ color: "var(--secondary-light)" }}>
                       {service.title}
                     </h3>
                     <p className="text-sm flex-1" style={{ color: "var(--neutral-600)", lineHeight: "1.65" }}>
@@ -62,7 +62,7 @@ export default function ServicesPage() {
                       style={{ color: "var(--primary)" }}
                     >
                       Learn more
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                     </span>
                   </div>
                 </Link>
@@ -119,7 +119,7 @@ export default function ServicesPage() {
               style={{ background: "linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%)" }}
             >
               <div className="relative z-10 max-w-xl mx-auto flex flex-col items-center gap-5">
-                <h2 className="text-white" style={{ fontSize: "clamp(1.5rem, 4vw, 2.25rem)" }}>
+                <h2 className="text-white" style={{ fontSize: "clamp(1.5rem, 4vw, 2.25rem)", color: "var(--neutral-white)" }}>
                   Need Help Choosing the Right Service?
                 </h2>
                 <p style={{ color: "rgba(255,255,255,0.8)" }}>

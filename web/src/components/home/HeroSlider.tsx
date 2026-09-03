@@ -67,7 +67,7 @@ export default function HeroSlider() {
       {/* Dark overlay for text readability */}
       <div
         className="absolute inset-0"
-        style={{ background: "linear-gradient(135deg, rgba(6,90,94,0.7) 0%, rgba(13,115,119,0.55) 50%, rgba(20,145,155,0.45) 100%)" }}
+        style={{ background: "linear-gradient(135deg, #06315eb3 0%, #0d55778c 50%, #145d9996 100%)" }}
       />
 
       {/* Slide indicators */}

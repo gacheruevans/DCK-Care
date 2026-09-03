@@ -1,7 +1,6 @@
 import Link from "next/link";
 import {
   SITE,
-  SERVICES,
   TESTIMONIALS,
   FAQ_ITEMS,
   TRUST_STATS,
@@ -24,18 +23,6 @@ function HeroSection() {
       <div className="container-dck relative z-10 py-20 text-center">
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-6">
           {/* Badge */}
-          <span
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium"
-            style={{
-              background: "rgba(255,255,255,0.15)",
-              color: "#fff",
-              backdropFilter: "blur(8px)",
-              border: "1px solid rgba(255,255,255,0.2)",
-            }}
-          >
-            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            Professional Home Care in Nottingham
-          </span>
 
           <h1
             className="text-white"
@@ -55,7 +42,7 @@ function HeroSection() {
             style={{ color: "rgba(255,255,255,0.85)" }}
           >
             At DCK Care, we offer you the opportunity to embrace the life you deserve.
-            Whether you need home support, companionship, or specialist care — we&apos;re here for you,
+            Whether you need home support, companionship, or specialist care. we&apos;re here for you,
             24 hours a day, 7 days a week.
           </p>
 
@@ -94,13 +81,13 @@ function TrustBar() {
               <div className="text-center flex flex-col items-center gap-1.5 py-4">
                 <span
                   className="text-3xl font-extrabold"
-                  style={{ color: "var(--primary)", fontFamily: "var(--font-sans)" }}
+                  style={{ color: "var(--secondary-light)", fontFamily: "var(--font-sans)" }}
                 >
                   {stat.value}
                 </span>
                 <span
                   className="text-sm font-semibold"
-                  style={{ color: "var(--neutral-900)" }}
+                  style={{ color: "var(--primary)" }}
                 >
                   {stat.label}
                 </span>
@@ -116,64 +103,6 @@ function TrustBar() {
   );
 }
 
-/* ========================================
-   Services Grid
-   ======================================== */
-function ServicesGrid() {
-  return (
-    <section className="section-padding" style={{ background: "var(--neutral-50)" }}>
-      <div className="container-dck">
-        <ScrollAnimator animation="fade-in-up">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-sm font-semibold uppercase tracking-wider" style={{ color: "var(--primary)" }}>
-              What We Offer
-            </span>
-            <h2 className="mt-2">Discover Our Range of Services</h2>
-            <p className="mt-4" style={{ color: "var(--neutral-600)" }}>
-              At DCK Care Ltd, we pride ourselves on having a dedicated team of professionals with
-              extensive experience in providing exceptional care services.
-            </p>
-          </div>
-        </ScrollAnimator>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {SERVICES.map((service, i) => (
-            <ScrollAnimator key={service.slug} animation="fade-in-up" delay={i * 80}>
-              <Link href={`/services/${service.slug}`} className="card group block h-full">
-                <div className="p-6 flex flex-col gap-3 h-full">
-                  <div className="flex items-center gap-3">
-                    <span
-                      className="flex items-center justify-center w-12 h-12 rounded-xl text-2xl transition-transform group-hover:scale-110"
-                      style={{ background: "var(--primary-50)" }}
-                    >
-                      {service.icon}
-                    </span>
-                    <h3
-                      className="text-lg font-semibold group-hover:text-[color:var(--primary)] transition-colors"
-                      style={{ fontSize: "1.05rem" }}
-                    >
-                      {service.title}
-                    </h3>
-                  </div>
-                  <p className="text-sm flex-1" style={{ color: "var(--neutral-600)", lineHeight: "1.65" }}>
-                    {service.shortDescription}
-                  </p>
-                  <span
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold mt-1 transition-all group-hover:gap-2.5"
-                    style={{ color: "var(--primary)" }}
-                  >
-                    Learn more
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-                  </span>
-                </div>
-              </Link>
-            </ScrollAnimator>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 /* ========================================
    About Preview
@@ -186,20 +115,13 @@ function AboutPreview() {
           <ScrollAnimator animation="slide-in-left">
             <div
               className="relative rounded-2xl overflow-hidden"
-              style={{
-                aspectRatio: "4/3",
-                background: "linear-gradient(135deg, var(--primary-50) 0%, var(--primary-100) 100%)",
-              }}
+              style={{ aspectRatio: "3/4" }}
             >
-              {/* Placeholder — replace with real image */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-6xl mb-4 block">🤝</span>
-                  <p className="text-sm font-medium" style={{ color: "var(--primary)" }}>
-                    DCK Care Living
-                  </p>
-                </div>
-              </div>
+              <img
+                src="/here_to_serve.jpg"
+                alt="DCK Care — Here to serve with compassion and expertise"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
               {/* Accent border */}
               <div
                 className="absolute bottom-0 left-0 right-0 h-1"
@@ -213,7 +135,7 @@ function AboutPreview() {
               <span className="text-sm font-semibold uppercase tracking-wider" style={{ color: "var(--primary)" }}>
                 About DCK Care
               </span>
-              <h2>Here to Serve — With Compassion and Expertise</h2>
+              <h2 style={{ color: "var(--secondary-light)" }}>Here to Serve With Compassion and Expertise</h2>
               <p style={{ color: "var(--neutral-600)" }}>
                 At DCK Care Ltd, we are committed to delivering professional home care services that go
                 beyond meeting basic needs. Our mission is to create a supportive environment where clients
@@ -302,9 +224,9 @@ function WhyChooseUs() {
             <span className="text-sm font-semibold uppercase tracking-wider" style={{ color: "var(--secondary-light)" }}>
               Why Choose Us
             </span>
-            <h2 className="mt-2 text-white">What Makes DCK Care Different</h2>
+            <h2 className="mt-2 text-white" style={{ color: "var(--neutral-50)" }}>What Makes DCK Care Different</h2>
             <p className="mt-4" style={{ color: "rgba(255,255,255,0.75)" }}>
-              We don&apos;t just provide care — we empower individuals to live with purpose, dignity, and joy.
+              We don&apos;t just provide care, we empower individuals to live with purpose, dignity, and joy.
             </p>
           </div>
         </ScrollAnimator>
@@ -321,7 +243,7 @@ function WhyChooseUs() {
                 }}
               >
                 <span className="text-4xl">{feature.icon}</span>
-                <h3 className="text-xl font-semibold text-white">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-white" style={{ color: "var(--neutral-50)" }}>{feature.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.75)" }}>
                   {feature.description}
                 </p>
@@ -346,7 +268,7 @@ function TestimonialsSection() {
             <span className="text-sm font-semibold uppercase tracking-wider" style={{ color: "var(--primary)" }}>
               Testimonials
             </span>
-            <h2 className="mt-2">What People Are Saying About Us</h2>
+            <h2 className="mt-2" style={{ color: "var(--secondary-light)" }}>What People Are Saying About Us</h2>
           </div>
         </ScrollAnimator>
 
@@ -410,10 +332,10 @@ function FAQSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <ScrollAnimator animation="slide-in-left">
             <div className="flex flex-col gap-4 lg:sticky lg:top-32">
-              <span className="text-sm font-semibold uppercase tracking-wider" style={{ color: "var(--primary)" }}>
-                FAQ
+              <span className="text-sm font-semibold tracking-wider" style={{ color: "var(--primary)" }}>
+                FAQs
               </span>
-              <h2>Frequently Asked Questions</h2>
+              <h2 style={{ color: "var(--secondary-light)" }}>Frequently Asked Questions</h2>
               <p style={{ color: "var(--neutral-600)" }}>
                 Have a question? We&apos;ve got answers. If you can&apos;t find what you&apos;re looking for,
                 feel free to contact us directly.
@@ -444,12 +366,11 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       style={{ background: "#fff", border: "1px solid var(--neutral-200)" }}
     >
       <summary
-        className="flex items-center justify-between gap-4 cursor-pointer p-5 text-sm font-semibold list-none transition-colors hover:bg-[var(--neutral-50)]"
-        style={{ color: "var(--neutral-900)" }}
+        className="flex items-center justify-between gap-4 cursor-pointer p-5 text-sm font-semibold list-none transition-colors hover:bg-[var(--secondary-light)] hover:text-[var(--neutral-white)]"
       >
         {question}
         <span className="shrink-0 transition-transform group-open:rotate-45">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary-hover)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M12 5v14" /><path d="M5 12h14" />
           </svg>
         </span>
@@ -488,7 +409,7 @@ function CTABanner() {
             />
 
             <div className="relative z-10 max-w-xl mx-auto flex flex-col items-center gap-5">
-              <h2 className="text-white" style={{ fontSize: "clamp(1.5rem, 4vw, 2.25rem)" }}>
+              <h2 className="text-white" style={{ fontSize: "clamp(1.5rem, 4vw, 2.25rem)", color: "var(--neutral-white)" }}>
                 Need Care? Let&apos;s Talk.
               </h2>
               <p className="text-base" style={{ color: "rgba(255,255,255,0.8)" }}>
@@ -513,6 +434,69 @@ function CTABanner() {
 }
 
 /* ========================================
+   Partners Section
+   ======================================== */
+const PARTNERS = [
+  { src: "/partner_one.png", alt: "Partner 1" },
+  { src: "/partner_two.png", alt: "Partner 2" },
+  { src: "/partner_three.png", alt: "Partner 3" },
+  { src: "/partner_four.png", alt: "Partner 4" },
+  { src: "/partner_five.png", alt: "Partner 5" },
+  { src: "/partner_six.png", alt: "Partner 6" },
+];
+
+function PartnersSection() {
+  return (
+    <section className="section-padding" style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
+      <div className="container-dck">
+        <ScrollAnimator animation="fade-in-up">
+          <div className="text-center mb-10">
+            <span
+              className="text-sm font-semibold uppercase tracking-wider"
+              style={{ color: "var(--primary)" }}
+            >
+              Trusted By
+            </span>
+            <h2 className="mt-2" style={{ color: "var(--secondary-light)" }}>Our Partners</h2>
+          </div>
+        </ScrollAnimator>
+
+        <ScrollAnimator animation="fade-in-up" delay={100}>
+          <div
+            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-2 items-center justify-items-center"
+          >
+            {PARTNERS.map((partner) => (
+              <div
+                key={partner.src}
+                className="partner-logo flex items-center justify-center p-4 rounded-xl transition-all"
+                style={{
+                  width: "80%",
+                  maxWidth: "180px",
+                  aspectRatio: "3/2",
+                }}
+              >
+                <img
+                  src={partner.src}
+                  alt={partner.alt}
+                  className="partner-logo-img"
+                />
+              </div>
+            ))}
+          </div>
+          <div style={{ borderTop: "1px solid var(--neutral-200)", marginTop: "2rem" }}>
+            <img
+              src="/trusted_care.jpg"
+              alt="Trusted Care"
+              className="Trusted-care-img"
+            />
+          </div>
+        </ScrollAnimator>
+      </div>
+    </section>
+  );
+}
+
+/* ========================================
    Homepage
    ======================================== */
 export default function Home() {
@@ -520,11 +504,11 @@ export default function Home() {
     <>
       <HeroSection />
       <TrustBar />
-      <ServicesGrid />
       <AboutPreview />
       <WhyChooseUs />
       <TestimonialsSection />
       <FAQSection />
+      <PartnersSection />
       <CTABanner />
     </>
   );
