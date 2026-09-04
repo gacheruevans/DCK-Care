@@ -51,10 +51,10 @@ export default function ServicesPage() {
                         {service.icon}
                       </span>
                     </div>
-                    <h3 className="text-lg font-semibold group-hover:text-[color:var(--primary)] transition-colors" style={{ color: "var(--secondary-light)" }}>
+                    <h3 className="text-lgfont -semibold group-hover:text-[color:var(--primary)] transition-colors" style={{ color: "var(--secondary-light)" }}>
                       {service.title}
                     </h3>
-                    <p className="text-sm flex-1" style={{ color: "var(--neutral-600)", lineHeight: "1.65" }}>
+                    <p className="text-md flex-1 font-size-11" style={{ color: "var(--neutral-600)", lineHeight: "1.65" }}>
                       {service.shortDescription}
                     </p>
                     <span

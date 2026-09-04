@@ -7,7 +7,7 @@ export const SITE = {
     "DCK Care Ltd provides professional home care services in Nottingham, UK. We offer supported living, dementia care, homecare, companionship, and more — all delivered with compassion and expertise.",
   phone: "0115 989 9122",
   email: "admin@dckcareltd.co.uk",
-  address: "Lamorna Court, 35 Wollaton Rd, Beeston, Nottingham NG9 2NG, UK",
+  address: "35 Wollaton Rd, Beeston, Nottingham NG9 2NG, UK",
   url: "https://dckcareltd.co.uk",
 } as const;
 

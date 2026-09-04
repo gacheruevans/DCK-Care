@@ -20,6 +20,7 @@ export default function ContactPage() {
           { label: "Home", href: "/" },
           { label: "Contact" },
         ]}
+        image="/contact_us.jpg"
       />
 
       <section className="section-padding">
@@ -29,7 +30,7 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <ScrollAnimator animation="fade-in-up">
                 <div className="flex flex-col gap-4 mb-8">
-                  <h2>Send Us a Message</h2>
+                  <h2 style={{ color: "var(--secondary-light)" }} >Send Us a Message</h2>
                   <p style={{ color: "var(--neutral-600)" }}>
                     Fill out the form below and our team will get back to you as soon as possible.
                   </p>
@@ -48,14 +49,14 @@ export default function ContactPage() {
                     style={{ background: "var(--primary)", color: "#fff" }}
                   >
                     <span className="flex items-center justify-center w-12 h-12 rounded-xl shrink-0" style={{ background: "rgba(255,255,255,0.15)" }}>
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                     </span>
                     <div>
-                      <h3 className="font-semibold text-white mb-1">Call Us</h3>
-                      <a href={`tel:${SITE.phone.replace(/\s/g, "")}`} className="text-lg font-bold text-white hover:underline">
+                      <h3 className="font-semibold text-white mb-1" style={{ color: "var(--neutral-white)" }}>Call Us</h3>
+                      <a href={`tel:${SITE.phone.replace(/\s/g, "")}`} className="text-lg font-bold text-white hover:underline" style={{ color: "var(--neutral-white)" }}>
                         {SITE.phone}
                       </a>
-                      <p className="text-xs mt-1" style={{ color: "rgba(255,255,255,0.7)" }}>
+                      <p className="text-xs mt-1" style={{ color: "#ffffffb3" }}>
                         Available 24/7
                       </p>
                     </div>
@@ -67,10 +68,10 @@ export default function ContactPage() {
                     style={{ background: "var(--neutral-50)", border: "1px solid var(--neutral-200)" }}
                   >
                     <span className="flex items-center justify-center w-12 h-12 rounded-xl shrink-0" style={{ background: "var(--primary-50)" }}>
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
                     </span>
                     <div>
-                      <h3 className="font-semibold mb-1">Email Us</h3>
+                      <h3 className="font-semibold mb-1" style={{ color: "var(--secondary-light)" }} >Email Us</h3>
                       <a href={`mailto:${SITE.email}`} className="text-sm font-medium hover:underline" style={{ color: "var(--primary)" }}>
                         {SITE.email}
                       </a>
@@ -86,10 +87,10 @@ export default function ContactPage() {
                     style={{ background: "var(--neutral-50)", border: "1px solid var(--neutral-200)" }}
                   >
                     <span className="flex items-center justify-center w-12 h-12 rounded-xl shrink-0" style={{ background: "var(--primary-50)" }}>
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>
                     </span>
                     <div>
-                      <h3 className="font-semibold mb-1">Location</h3>
+                      <h3 className="font-semibold mb-1" style={{ color: "var(--secondary-light)" }} >Location</h3>
                       <p className="text-sm" style={{ color: "var(--neutral-600)" }}>
                         {SITE.address}
                       </p>
@@ -119,7 +120,7 @@ export default function ContactPage() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="DCK Care Ltd — Lamorna Court, 35 Wollaton Rd, Beeston, Nottingham NG9 2NG"
+            title="DCK Care Ltd — 35 Wollaton Rd, Beeston, Nottingham NG9 2NG"
           />
         </div>
       </section>
