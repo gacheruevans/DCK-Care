@@ -99,6 +99,7 @@ export default function CareersPage() {
           { label: "Careers" },
         ]}
         image="/careers.jpg"
+        imageClassName="object-[center_85%]"
       />
 
       {/* Why Work With Us */}

@@ -21,7 +21,7 @@ export default function ContactPage() {
           { label: "Contact" },
         ]}
         image="/contact_us.jpg"
-        imageClassName="-scale-x-100"
+        imageClassName="object-[center_90%]"
       />
 
       <section className="section-padding">

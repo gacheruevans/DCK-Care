@@ -20,8 +20,8 @@ export default function ServicesPage() {
           { label: "Home", href: "/" },
           { label: "Services" },
         ]}
-        image="/our_services.jpg"
-        imageClassName="-scale-x-100"
+        image="/services.jpg"
+        imageClassName=""
       />
 
       {/* Services Grid */}
