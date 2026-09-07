@@ -98,7 +98,7 @@ export default function CareersPage() {
           { label: "Home", href: "/" },
           { label: "Careers" },
         ]}
-        image="/career.jpg"
+        image="/careers.jpg"
       />
 
       {/* Why Work With Us */}

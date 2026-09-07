@@ -8,9 +8,16 @@ interface PageHeroProps {
   subtitle?: string;
   breadcrumbs?: { label: string; href?: string }[];
   image?: string;
+  imageClassName?: string;
 }
 
-export default function PageHero({ title, subtitle, breadcrumbs, image }: PageHeroProps) {
+export default function PageHero({
+  title,
+  subtitle,
+  breadcrumbs,
+  image,
+  imageClassName = "",
+}: PageHeroProps) {
   return (
     <section
       className="relative overflow-hidden"
@@ -28,7 +35,7 @@ export default function PageHero({ title, subtitle, breadcrumbs, image }: PageHe
             alt={title}
             fill
             priority
-            className="object-cover"
+            className={`object-cover ${imageClassName}`}
             sizes="100vw"
           />
           <div
