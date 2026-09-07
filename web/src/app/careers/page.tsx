@@ -112,7 +112,9 @@ export default function CareersPage() {
               >
                 Why Work With Us
               </span>
-              <h2 className="mt-2">Benefits of Joining DCK Care</h2>
+              <h2 className="mt-2" style={{
+                color: "var(--secondary-light)"
+              }}>Benefits of Joining DCK Care</h2>
               <p className="mt-4" style={{ color: "var(--neutral-600)" }}>
                 We believe that great care starts with a great team. That&apos;s why we invest in our
                 people and create an environment where everyone can thrive.
@@ -131,7 +133,7 @@ export default function CareersPage() {
                   }}
                 >
                   <span className="text-3xl">{benefit.icon}</span>
-                  <h3 className="text-lg font-semibold">{benefit.title}</h3>
+                  <h3 className="text-lg font-semibold" style={{ color: "var(--primary)" }}>{benefit.title}</h3>
                   <p className="text-sm" style={{ color: "var(--neutral-600)", lineHeight: "1.65" }}>
                     {benefit.description}
                   </p>
@@ -153,7 +155,7 @@ export default function CareersPage() {
               >
                 Open Positions
               </span>
-              <h2 className="mt-2">Current Opportunities</h2>
+              <h2 className="mt-2" style={{ color: "var(--secondary-light)" }}>Current Opportunities</h2>
               <p className="mt-4" style={{ color: "var(--neutral-600)" }}>
                 Explore our available roles below. Don&apos;t see the right fit? We&apos;re always happy
                 to hear from talented individuals — send us your CV.
@@ -172,7 +174,7 @@ export default function CareersPage() {
                     {/* Header */}
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
                       <div>
-                        <h3 className="text-xl font-semibold">{position.title}</h3>
+                        <h3 className="text-xl font-semibold" style={{ color: "var(--secondary-light)" }}>{position.title}</h3>
                         <div className="flex flex-wrap items-center gap-3 mt-1.5">
                           <span
                             className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium"
@@ -257,7 +259,7 @@ export default function CareersPage() {
               <div className="relative z-10 max-w-xl mx-auto flex flex-col items-center gap-5">
                 <h2
                   className="text-white"
-                  style={{ fontSize: "clamp(1.5rem, 4vw, 2.25rem)" }}
+                  style={{ fontSize: "clamp(1.5rem, 4vw, 2.25rem)", color: "var(--neutral-white)" }}
                 >
                   Don&apos;t See the Right Role?
                 </h2>

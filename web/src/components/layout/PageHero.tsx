@@ -34,8 +34,7 @@ export default function PageHero({ title, subtitle, breadcrumbs, image }: PageHe
           <div
             className="absolute inset-0"
             style={{
-              background:
-                "linear-gradient(135deg, #06315ecc 0%, #0d5577b3 50%, #145d9999 100%)",
+              background: "linear-gradient(135deg, #4d585f79 0%, #4b586266 50%, #c4e1f866 100%)",
             }}
           />
         </>
@@ -92,7 +91,7 @@ export default function PageHero({ title, subtitle, breadcrumbs, image }: PageHe
         </h1>
 
         {subtitle && (
-          <p className="mt-3 max-w-2xl text-lg" style={{ color: "#ffffffd9" }}>
+          <p className="mt-3 max-w-2xl text-lg" style={{ color: "hsla(0, 0%, 100%, 0.85)" }}>
             {subtitle}
           </p>
         )}

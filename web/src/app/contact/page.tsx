@@ -113,7 +113,7 @@ export default function ContactPage() {
           style={{ height: "400px", background: "var(--neutral-100)" }}
         >
           <iframe
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Lamorna+Court,+35+Wollaton+Rd,+Beeston,+Nottingham+NG9+2NG,+UK&zoom=15"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=35+Wollaton+Rd,+Beeston,+Nottingham+NG9+2NG,+UK&zoom=15"
             width="100%"
             height="100%"
             style={{ border: 0 }}

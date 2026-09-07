@@ -23,7 +23,6 @@ function HeroSection() {
       <div className="container-dck relative z-10 py-20 text-center">
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-6">
           {/* Badge */}
-
           <h1
             className="text-white"
             style={{
@@ -41,8 +40,7 @@ function HeroSection() {
             className="max-w-xl text-lg leading-relaxed"
             style={{ color: "rgba(255,255,255,0.85)" }}
           >
-            At DCK Care, we offer you the opportunity to embrace the life you deserve.
-            Whether you need home support, companionship, or specialist care. we&apos;re here for you,
+            At DCK Care, we offer you the opportunity to embrace the life you deserve -            Whether you need home support, companionship, or specialist care. we&apos;re here for you,
             24 hours a day, 7 days a week.
           </p>
 
