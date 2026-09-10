@@ -90,16 +90,16 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className="flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                    className="flex items-center gap-1 px-4 py-2 rounded-lg text-md font-medium transition-colors"
                     style={{
-                      color: isActive ? "var(--neutral-white)" : "var(--neutral-700)",
+                      color: isActive ? "var(--neutral-white)" : "var(--primary)",
                       backgroundColor: isActive ? "var(--secondary-light)" : "transparent",
                     }}
                     onMouseEnter={(e) => {
                       if (!isActive) e.currentTarget.style.color = "var(--secondary-light)";
                     }}
                     onMouseLeave={(e) => {
-                      if (!isActive) e.currentTarget.style.color = "var(--neutral-700)";
+                      if (!isActive) e.currentTarget.style.color = "var(--primary)";
                     }}
                   >
                     {link.label}

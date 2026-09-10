@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import PageHero from "@/components/layout/PageHero";
 import ScrollAnimator from "@/components/ui/ScrollAnimator";
 import { SERVICES, SITE } from "@/lib/constants";
@@ -21,7 +22,7 @@ export default function ServicesPage() {
           { label: "Services" },
         ]}
         image="/services.jpg"
-        imageClassName=""
+        imageClassName="object-[center_80%]"
       />
 
       {/* Services Grid */}
@@ -30,7 +31,7 @@ export default function ServicesPage() {
           <ScrollAnimator animation="fade-in-up">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 style={{ color: "var(--secondary-light)" }}>Discover Our Range of Care Services</h2>
-              <p className="mt-4" style={{ color: "var(--neutral-600)" }}>
+              <p className="mt-4 text-lg" style={{ color: "var(--neutral-600)" }}>
                 At DCK Care Ltd, we offer a comprehensive suite of home care services designed to
                 support individuals at every stage of their care journey.
               </p>
@@ -42,29 +43,51 @@ export default function ServicesPage() {
               <ScrollAnimator key={service.slug} animation="fade-in-up" delay={i * 80}>
                 <Link
                   href={`/services/${service.slug}`}
-                  className="card group block h-full"
+                  className="card group flex flex-col h-full overflow-hidden"
                 >
-                  <div className="p-6 flex flex-col gap-4 h-full">
-                    <div className="flex items-center gap-3">
-                      <span
-                        className="flex items-center justify-center w-14 h-14 rounded-xl text-2xl transition-transform group-hover:scale-110"
-                        style={{ background: "var(--primary-50)" }}
-                      >
-                        {service.icon}
-                      </span>
-                    </div>
-                    <h3 className="text-lgfont -semibold group-hover:text-[color:var(--primary)] transition-colors" style={{ color: "var(--secondary-light)" }}>
+                  {/* Card Image */}
+                  <div className="relative h-52 w-full overflow-hidden bg-neutral-100">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+
+                  <div className="p-6 flex flex-col gap-3 flex-1">
+                    <h3
+                      className="text-lg font-semibold group-hover:text-[color:var(--primary)] transition-colors"
+                      style={{ color: "var(--secondary-light)" }}
+                    >
                       {service.title}
                     </h3>
-                    <p className="text-md flex-1 font-size-11" style={{ color: "var(--neutral-600)", lineHeight: "1.65" }}>
+                    <p
+                      className="text-md flex-1 font-size-11"
+                      style={{ color: "var(--neutral-600)", lineHeight: "1.65" }}
+                    >
                       {service.shortDescription}
                     </p>
                     <span
-                      className="inline-flex items-center gap-1.5 text-sm font-semibold mt-auto transition-all group-hover:gap-2.5"
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold mt-auto pt-2 transition-all group-hover:gap-2.5"
                       style={{ color: "var(--primary)" }}
                     >
                       Learn more
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                      </svg>
                     </span>
                   </div>
                 </Link>
@@ -82,7 +105,7 @@ export default function ServicesPage() {
               <span className="text-sm font-semibold uppercase tracking-wider" style={{ color: "var(--primary)" }}>
                 How It Works
               </span>
-              <h2 className="mt-2">Getting Started Is Simple</h2>
+              <h2 className="mt-2" style={{ color: "var(--secondary-light)" }}>Getting Started Is Simple</h2>
             </div>
           </ScrollAnimator>
 
@@ -98,13 +121,13 @@ export default function ServicesPage() {
                     <span className="text-5xl">{item.icon}</span>
                     <span
                       className="absolute -top-2 -right-3 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold"
-                      style={{ background: "var(--secondary)", color: "#fff" }}
+                      style={{ color: "var(--neutral-white)", background: "var(--primary)" }}
                     >
                       {item.step}
                     </span>
                   </div>
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
-                  <p className="text-sm" style={{ color: "var(--neutral-600)" }}>{item.desc}</p>
+                  <h3 className="text-lg font-semibold" style={{ color: "var(--primary)" }}>{item.title}</h3>
+                  <p className="text-lg" style={{ color: "var(--neutral-600)" }}>{item.desc}</p>
                 </div>
               </ScrollAnimator>
             ))}

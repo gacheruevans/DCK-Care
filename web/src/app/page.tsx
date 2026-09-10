@@ -223,7 +223,7 @@ function WhyChooseUs() {
               Why Choose Us
             </span>
             <h2 className="mt-2 text-white" style={{ color: "var(--neutral-50)" }}>What Makes DCK Care Different</h2>
-            <p className="mt-4" style={{ color: "rgba(255,255,255,0.75)" }}>
+            <p className="mt-4 text-md" style={{ color: "rgba(255,255,255,0.75)" }}>
               We don&apos;t just provide care, we empower individuals to live with purpose, dignity, and joy.
             </p>
           </div>
@@ -242,7 +242,7 @@ function WhyChooseUs() {
               >
                 <span className="text-4xl">{feature.icon}</span>
                 <h3 className="text-xl font-semibold text-white" style={{ color: "var(--neutral-50)" }}>{feature.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.75)" }}>
+                <p className="text-sm leading-relaxed text-lg" style={{ color: "rgba(255,255,255,0.75)" }}>
                   {feature.description}
                 </p>
               </div>
@@ -263,7 +263,7 @@ function TestimonialsSection() {
       <div className="container-dck">
         <ScrollAnimator animation="fade-in-up">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-sm font-semibold uppercase tracking-wider" style={{ color: "var(--primary)" }}>
+            <span className="text-lg font-semibold uppercase tracking-wider" style={{ color: "var(--primary)" }}>
               Testimonials
             </span>
             <h2 className="mt-2" style={{ color: "var(--secondary-light)" }}>What People Are Saying About Us</h2>
@@ -290,7 +290,7 @@ function TestimonialsSection() {
                 </div>
 
                 {/* Quote */}
-                <p className="text-sm flex-1 italic leading-relaxed" style={{ color: "var(--neutral-600)" }}>
+                <p className="text-md flex-1 italic leading-relaxed" style={{ color: "var(--neutral-600)" }}>
                   &ldquo;{testimonial.quote}&rdquo;
                 </p>
 
@@ -303,7 +303,7 @@ function TestimonialsSection() {
                     {testimonial.name[0]}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold" style={{ color: "var(--neutral-900)" }}>
+                    <p className="text-sm font-semibold" style={{ color: "var(--primary)" }}>
                       {testimonial.name}
                     </p>
                     <p className="text-xs" style={{ color: "var(--neutral-500)" }}>

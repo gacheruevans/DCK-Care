@@ -47,6 +47,7 @@ export default async function ServicePage({
           { label: "Services", href: "/services" },
           { label: service.title },
         ]}
+        image="/services_shared_bg.jpg"
       />
 
       {/* Service Detail */}
@@ -69,17 +70,17 @@ export default async function ServicePage({
                       <span className="text-sm font-semibold uppercase tracking-wider" style={{ color: "var(--primary)" }}>
                         Our Service
                       </span>
-                      <h2 className="text-2xl">{service.title}</h2>
+                      <h2 className="text-2xl" style={{ fontFamily: "var(--font-sans)", color: "var(--secondary-light)" }}>{service.title}</h2>
                     </div>
                   </div>
 
-                  <p className="text-base leading-relaxed" style={{ color: "var(--neutral-600)" }}>
+                  <p className="text-base leading-relaxed text-lg" style={{ color: "var(--neutral-600)" }}>
                     {service.description}
                   </p>
 
                   {/* Features */}
                   <div>
-                    <h3 className="text-xl font-semibold mb-4">What&apos;s Included</h3>
+                    <h3 className="text-xl font-semibold mb-4" style={{ fontFamily: "var(--font-sans)", color: "var(--primary)" }}>What&apos;s Included</h3>
                     <div className="grid sm:grid-cols-2 gap-3">
                       {service.features.map((feature) => (
                         <div key={feature} className="flex items-start gap-3 p-3 rounded-xl" style={{ background: "var(--neutral-50)" }}>
@@ -111,7 +112,7 @@ export default async function ServicePage({
                     className="p-6 rounded-2xl flex flex-col gap-4"
                     style={{ background: "var(--primary)", color: "#fff" }}
                   >
-                    <h3 className="text-lg font-semibold text-white">Interested in this service?</h3>
+                    <h3 className="text-lg font-semibold text-white" style={{ color: "var(--neutral-white)" }}>Interested in this service?</h3>
                     <p className="text-sm" style={{ color: "rgba(255,255,255,0.8)" }}>
                       Get in touch with our team to discuss how we can help you or your loved one.
                     </p>
@@ -163,19 +164,19 @@ export default async function ServicePage({
       <section className="section-padding" style={{ background: "var(--neutral-50)", paddingTop: "3rem" }}>
         <div className="container-dck">
           <ScrollAnimator animation="fade-in-up">
-            <h2 className="text-center mb-8">You May Also Be Interested In</h2>
+            <h2 className="text-center mb-10" style={{ fontFamily: "var(--font-sans)", color: "var(--primary)" }}>You May Also Be Interested In</h2>
           </ScrollAnimator>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {relatedServices.map((s, i) => (
               <ScrollAnimator key={s.slug} animation="fade-in-up" delay={i * 100}>
                 <Link href={`/services/${s.slug}`} className="card group block h-full">
                   <div className="p-6 flex flex-col gap-3 h-full">
                     <span className="text-3xl">{s.icon}</span>
-                    <h3 className="text-lg font-semibold group-hover:text-[color:var(--primary)] transition-colors">
+                    <h3 className="text-lg font-semibold group-hover:text-[color:var(--primary)] transition-colors" style={{ fontFamily: "var(--font-sans)", color: "var(--secondary-light)" }}>
                       {s.title}
                     </h3>
-                    <p className="text-sm flex-1" style={{ color: "var(--neutral-600)" }}>
+                    <p className="text-md flex-1" style={{ color: "var(--neutral-600)" }}>
                       {s.shortDescription}
                     </p>
                     <span className="inline-flex items-center gap-1.5 text-sm font-semibold transition-all group-hover:gap-2.5" style={{ color: "var(--primary)" }}>

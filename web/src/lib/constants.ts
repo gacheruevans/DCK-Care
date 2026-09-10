@@ -45,6 +45,7 @@ export const SERVICES = [
     description:
       "Our supported living services provide 24/7 care and assistance, enabling individuals to live as independently as possible within their own homes or supported accommodation. We focus on empowering people to make their own choices while having the safety net of professional support always available.",
     icon: "🏠",
+    image: "/personal_care_five.jpg",
     color: "#0D7377",
     features: [
       "24/7 care and support availability",
@@ -63,6 +64,7 @@ export const SERVICES = [
     description:
       "We provide compassionate, professional support for individuals living with physical disabilities. Our trained caregivers assist with mobility, personal care, daily activities, and exercise routines — all designed to maintain and improve quality of life while respecting dignity and independence.",
     icon: "♿",
+    image: "/personal_care_four.jpeg",
     color: "#14919B",
     features: [
       "Mobility assistance and transfers",
@@ -81,6 +83,7 @@ export const SERVICES = [
     description:
       "Our specialist dementia care team provides compassionate, person-centred support for individuals living with Alzheimer's, vascular dementia, and other forms of cognitive decline. We work closely with families to create safe, stimulating environments that foster happiness and maintain dignity.",
     icon: "🧠",
+    image: "/personal_care_two.jpeg",
     color: "#065A5E",
     features: [
       "Specialist dementia-trained caregivers",
@@ -99,6 +102,7 @@ export const SERVICES = [
     description:
       "Our flexible homecare services are designed to meet your exact needs, whether you require a brief daily visit or round-the-clock support. From personal care to household tasks, meal preparation to medication management, our trained caregivers deliver professional, compassionate care in the comfort of your own home.",
     icon: "🏡",
+    image: "/personal_care_three.jpg",
     color: "#E8913A",
     features: [
       "Flexible care hours (1-24 hours daily)",
@@ -117,6 +121,7 @@ export const SERVICES = [
     description:
       "Loneliness and isolation can significantly impact health and wellbeing. Our companionship services provide meaningful social interaction, whether it's enjoying a cup of tea, taking a walk, attending appointments, or simply having someone to talk to. Our companions are carefully matched to each client's interests and personality.",
     icon: "🤝",
+    image: "/personal_care_six.jpg",
     color: "#0D7377",
     features: [
       "Social visits and conversation",
@@ -135,6 +140,7 @@ export const SERVICES = [
     description:
       "Recovery after surgery requires proper rest, care, and support. Our post-surgical care services ensure you have professional assistance during your recovery period, from wound care and medication management to mobility support and meal preparation. We help you heal faster in the comfort of your own home.",
     icon: "🩺",
+    image: "/personal_care_seven.jpg",
     color: "#14919B",
     features: [
       "Wound care and monitoring",
@@ -153,6 +159,7 @@ export const SERVICES = [
     description:
       "Live-in care provides a dedicated caregiver who resides with you, offering continuous support and companionship around the clock. This is an excellent alternative to residential care, allowing you to remain in your familiar surroundings while receiving comprehensive professional care tailored to your needs.",
     icon: "🏠",
+    image: "/personal_care_eight.jpg",
     color: "#065A5E",
     features: [
       "Dedicated live-in caregiver",
@@ -171,6 +178,7 @@ export const SERVICES = [
     description:
       "Our complex care services are designed for individuals with multiple or challenging care needs, including learning disabilities, autism, and complex physical conditions. Using Positive Behaviour Support (PBS) and Active Support methodologies, we empower individuals to participate fully in their communities and lead fulfilling lives.",
     icon: "💪",
+    image: "/personal_care_nine.jpg",
     color: "#E8913A",
     features: [
       "Positive Behaviour Support (PBS)",
@@ -189,6 +197,7 @@ export const SERVICES = [
     description:
       "Proper medication management is crucial for health and wellbeing. Our trained caregivers provide reliable medication support, from gentle reminders to full administration, ensuring prescriptions are taken correctly and on time. We work closely with healthcare professionals to maintain accurate records and monitor for any concerns.",
     icon: "💊",
+    image: "/personal_care_one.jpeg",
     color: "#0D7377",
     features: [
       "Medication reminders and prompts",

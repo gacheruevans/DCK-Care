@@ -98,7 +98,7 @@ export default function PageHero({
         </h1>
 
         {subtitle && (
-          <p className="mt-3 max-w-2xl text-lg" style={{ color: "hsla(0, 0%, 100%, 0.85)" }}>
+          <p className="mt-3 max-w-2xl text-lg font-medium" style={{ color: "#ffffffff" }}>
             {subtitle}
           </p>
         )}
