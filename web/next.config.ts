@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  basePath: "/dck-care ",
   output: "export",
+  basePath: "/DCK-Care",
   trailingSlash: true,
+  images: {
+    unoptimized: true,
+  }
 };
 
 export default nextConfig;
