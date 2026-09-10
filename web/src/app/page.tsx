@@ -223,7 +223,7 @@ function WhyChooseUs() {
               Why Choose Us
             </span>
             <h2 className="mt-2 text-white" style={{ color: "var(--neutral-50)" }}>What Makes DCK Care Different</h2>
-            <p className="mt-4 text-md" style={{ color: "rgba(255,255,255,0.75)" }}>
+            <p className="mt-4 text-md" style={{ color: "var(--neutral-white)" }}>
               We don&apos;t just provide care, we empower individuals to live with purpose, dignity, and joy.
             </p>
           </div>
@@ -241,8 +241,8 @@ function WhyChooseUs() {
                 }}
               >
                 <span className="text-4xl">{feature.icon}</span>
-                <h3 className="text-xl font-semibold text-white" style={{ color: "var(--neutral-50)" }}>{feature.title}</h3>
-                <p className="text-sm leading-relaxed text-lg" style={{ color: "rgba(255,255,255,0.75)" }}>
+                <h3 className="text-xl font-semibold" style={{ color: "var(--secondary-light)" }}>{feature.title}</h3>
+                <p className="leading-relaxed text-lg" style={{ color: "var(--secondary-light)" }}>
                   {feature.description}
                 </p>
               </div>
