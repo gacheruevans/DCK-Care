@@ -1,4 +1,5 @@
 {
+  "homepage": "http://gacheruevans.github.io/DCK-Care",
   "name": "DCK-Care",
   "version": "1.0.0",
   "description": "",
@@ -10,5 +11,8 @@
     "Care website"
   ],
   "author": "Evans Gacheru Munene",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
