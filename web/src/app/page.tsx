@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   SITE,
   TESTIMONIALS,
@@ -115,10 +116,12 @@ function AboutPreview() {
               className="relative rounded-2xl overflow-hidden"
               style={{ aspectRatio: "3/4" }}
             >
-              <img
+              <Image
                 src="/here_to_serve.jpg"
                 alt="DCK Care — Here to serve with compassion and expertise"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
               {/* Accent border */}
               <div
@@ -466,26 +469,30 @@ function PartnersSection() {
             {PARTNERS.map((partner) => (
               <div
                 key={partner.src}
-                className="partner-logo flex items-center justify-center p-4 rounded-xl transition-all"
+                className="partner-logo flex items-center justify-center p-4 rounded-xl transition-all relative"
                 style={{
                   width: "80%",
                   maxWidth: "180px",
                   aspectRatio: "3/2",
                 }}
               >
-                <img
+                <Image
                   src={partner.src}
                   alt={partner.alt}
-                  className="partner-logo-img"
+                  width={140}
+                  height={60}
+                  className="partner-logo-img object-contain"
                 />
               </div>
             ))}
           </div>
-          <div style={{ borderTop: "1px solid var(--neutral-200)", marginTop: "2rem" }}>
-            <img
+          <div className="relative w-full flex justify-center" style={{ borderTop: "1px solid var(--neutral-200)", marginTop: "2rem", paddingTop: "2rem" }}>
+            <Image
               src="/trusted_care.jpg"
               alt="Trusted Care"
-              className="Trusted-care-img"
+              width={600}
+              height={120}
+              className="Trusted-care-img object-contain"
             />
           </div>
         </ScrollAnimator>

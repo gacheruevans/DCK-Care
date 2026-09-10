@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import PageHero from "@/components/layout/PageHero";
 import ScrollAnimator from "@/components/ui/ScrollAnimator";
 
@@ -31,10 +32,12 @@ export default function AboutPage() {
                 className="relative rounded-2xl overflow-hidden"
                 style={{ aspectRatio: "3/4" }}
               >
-                <img
+                <Image
                   src="/senior_home_aregiving.jpeg"
                   alt="DCK Care — Senior home caregiving and compassionate support"
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 {/* Accent border */}
                 <div
@@ -163,24 +166,30 @@ export default function AboutPage() {
                 {/* Left Column: 3 stacked images */}
                 <div className="grid grid-rows-3 gap-3 sm:gap-4 h-full">
                   <div className="relative rounded-2xl overflow-hidden group shadow-sm bg-neutral-100">
-                    <img
+                    <Image
                       src="/personal_care_one.jpeg"
                       alt="Personalised Care Support"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 50vw, 25vw"
                     />
                   </div>
                   <div className="relative rounded-2xl overflow-hidden group shadow-sm bg-neutral-100">
-                    <img
+                    <Image
                       src="/personal_care_two.jpeg"
                       alt="Compassionate Care in Action"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 50vw, 25vw"
                     />
                   </div>
                   <div className="relative rounded-2xl overflow-hidden group shadow-sm bg-neutral-100">
-                    <img
+                    <Image
                       src="/personal_care_three.jpg"
                       alt="Dedicated Caregiver Assistance"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 50vw, 25vw"
                     />
                   </div>
                 </div>
@@ -188,17 +197,21 @@ export default function AboutPage() {
                 {/* Right Column: 1 large feature image (spans 2 rows) + 1 bottom image */}
                 <div className="grid grid-rows-3 gap-3 sm:gap-4 h-full">
                   <div className="row-span-2 relative rounded-2xl overflow-hidden group shadow-sm bg-neutral-100">
-                    <img
+                    <Image
                       src="/personal_care_four.jpeg"
                       alt="Person-Centred Care Excellence"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 50vw, 25vw"
                     />
                   </div>
                   <div className="row-span-1 relative rounded-2xl overflow-hidden group shadow-sm bg-neutral-100">
-                    <img
+                    <Image
                       src="/personal_care_five.jpg"
                       alt="Supporting Independence and Dignity"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 50vw, 25vw"
                     />
                   </div>
                 </div>
