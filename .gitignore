@@ -19,6 +19,7 @@ pids
 lib-cov
 
 # Agents
+.agents
 ./.agents
 ../package.json
 

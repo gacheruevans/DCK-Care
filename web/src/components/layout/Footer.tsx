@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Link href="/" className="inline-block" aria-label="DCK Care Ltd — Home">
               <Image
-                src="/dck-logosmall.png"
+                src="https://gacheruevans.github.io/DCK-Care/dck-logosmall.png"
                 alt="DCK Care Ltd logo"
                 width={160}
                 height={83}

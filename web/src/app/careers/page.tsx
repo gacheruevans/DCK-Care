@@ -98,7 +98,7 @@ export default function CareersPage() {
           { label: "Home", href: "/" },
           { label: "Careers" },
         ]}
-        image="/careers.jpg"
+        image="https://gacheruevans.github.io/DCK-Care/careers.jpg"
         imageClassName="object-[center_85%]"
       />
 

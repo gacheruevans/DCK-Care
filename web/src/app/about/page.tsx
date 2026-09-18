@@ -20,7 +20,8 @@ export default function AboutPage() {
           { label: "Home", href: "/" },
           { label: "About Us" },
         ]}
-        image="/about_us_hero.jpg"
+        image="https://gacheruevans.github.io/DCK-Care/about_us_hero.jpg"
+
       />
 
       {/* About Content */}
@@ -33,7 +34,7 @@ export default function AboutPage() {
                 style={{ aspectRatio: "3/4" }}
               >
                 <Image
-                  src="/senior_home_aregiving.jpeg"
+                  src="https://gacheruevans.github.io/DCK-Care/senior_home_aregiving.jpeg"
                   alt="DCK Care — Senior home caregiving and compassionate support"
                   fill
                   className="object-cover"
@@ -167,7 +168,7 @@ export default function AboutPage() {
                 <div className="grid grid-rows-3 gap-3 sm:gap-4 h-full">
                   <div className="relative rounded-2xl overflow-hidden group shadow-sm bg-neutral-100">
                     <Image
-                      src="/personal_care_one.jpeg"
+                      src="https://gacheruevans.github.io/DCK-Care/personal_care_one.jpeg"
                       alt="Personalised Care Support"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -176,7 +177,7 @@ export default function AboutPage() {
                   </div>
                   <div className="relative rounded-2xl overflow-hidden group shadow-sm bg-neutral-100">
                     <Image
-                      src="/personal_care_two.jpeg"
+                      src="https://gacheruevans.github.io/DCK-Care/personal_care_two.jpeg"
                       alt="Compassionate Care in Action"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -185,7 +186,7 @@ export default function AboutPage() {
                   </div>
                   <div className="relative rounded-2xl overflow-hidden group shadow-sm bg-neutral-100">
                     <Image
-                      src="/personal_care_three.jpg"
+                      src="https://gacheruevans.github.io/DCK-Care/personal_care_three.jpg"
                       alt="Dedicated Caregiver Assistance"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -198,7 +199,7 @@ export default function AboutPage() {
                 <div className="grid grid-rows-3 gap-3 sm:gap-4 h-full">
                   <div className="row-span-2 relative rounded-2xl overflow-hidden group shadow-sm bg-neutral-100">
                     <Image
-                      src="/personal_care_four.jpeg"
+                      src="https://gacheruevans.github.io/DCK-Care/personal_care_four.jpeg"
                       alt="Person-Centred Care Excellence"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -207,7 +208,7 @@ export default function AboutPage() {
                   </div>
                   <div className="row-span-1 relative rounded-2xl overflow-hidden group shadow-sm bg-neutral-100">
                     <Image
-                      src="/personal_care_five.jpg"
+                      src="https://gacheruevans.github.io/DCK-Care/personal_care_five.jpg"
                       alt="Supporting Independence and Dignity"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"

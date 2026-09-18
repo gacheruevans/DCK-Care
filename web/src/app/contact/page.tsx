@@ -20,7 +20,7 @@ export default function ContactPage() {
           { label: "Home", href: "/" },
           { label: "Contact" },
         ]}
-        image="/contact_us.jpg"
+        image="https://gacheruevans.github.io/DCK-Care/contact_us.jpg"
         imageClassName="object-[center_90%]"
       />
 

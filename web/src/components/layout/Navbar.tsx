@@ -66,7 +66,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0" aria-label="DCK Care Ltd — Home">
             <Image
-              src="/dck-logosmall.png"
+              src="https://gacheruevans.github.io/DCK-Care/dck-logosmall.png"
               alt="DCK Care Ltd logo"
               width={160}
               height={83}
@@ -157,12 +157,9 @@ export default function Navbar() {
           </div>
 
           {/* Desktop CTA */}
-          <a
-            href="/contact"
-            className="hidden lg:inline-flex btn btn-primary btn-sm"
-          >
+          <Link href="/contact" className="hidden lg:inline-flex btn btn-primary btn-sm">
             Contact Us
-          </a>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button

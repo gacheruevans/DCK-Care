@@ -25,12 +25,13 @@ function HeroSection() {
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-6">
           {/* Badge */}
           <h1
-            className="text-white"
+            className="text-white font-bold"
             style={{
               fontSize: "clamp(2.25rem, 6vw, 4rem)",
               color: "var(--neutral-50)",
               lineHeight: "1.1",
               letterSpacing: "-0.03em",
+              textShadow: "0 2px 12px rgba(0, 0, 0, 0.8), 0 4px 18px rgba(0, 0, 0, 0.6)",
             }}
           >
             Delivering the <br />
@@ -39,7 +40,10 @@ function HeroSection() {
 
           <p
             className="max-w-xl text-lg leading-relaxed"
-            style={{ color: "rgba(255,255,255,0.85)" }}
+            style={{
+              color: "rgba(255,255,255,0.95)",
+              textShadow: "0 2px 8px rgba(0, 0, 0, 0.7)",
+            }}
           >
             At DCK Care, we offer you the opportunity to embrace the life you deserve -            Whether you need home support, companionship, or specialist care. we&apos;re here for you,
             24 hours a day, 7 days a week.
@@ -117,7 +121,7 @@ function AboutPreview() {
               style={{ aspectRatio: "3/4" }}
             >
               <Image
-                src="/here_to_serve.jpg"
+                src="https://gacheruevans.github.io/DCK-Care/here_to_serve.jpg"
                 alt="DCK Care — Here to serve with compassion and expertise"
                 fill
                 className="object-cover"
@@ -226,7 +230,7 @@ function WhyChooseUs() {
               Why Choose Us
             </span>
             <h2 className="mt-2 text-white" style={{ color: "var(--neutral-50)" }}>What Makes DCK Care Different</h2>
-            <p className="mt-4 text-md" style={{ color: "var(--neutral-white)" }}>
+            <p className="mt-4 text-md text-white" style={{ color: "var(--neutral-white)" }}>
               We don&apos;t just provide care, we empower individuals to live with purpose, dignity, and joy.
             </p>
           </div>
@@ -244,8 +248,8 @@ function WhyChooseUs() {
                 }}
               >
                 <span className="text-4xl">{feature.icon}</span>
-                <h3 className="text-xl font-semibold" style={{ color: "var(--secondary-light)" }}>{feature.title}</h3>
-                <p className="leading-relaxed text-lg" style={{ color: "var(--secondary-light)" }}>
+                <h3 className="text-xl font-semibold" style={{ color: "var(--neutral-50)" }}>{feature.title}</h3>
+                <p className="leading-relaxed text-lg" style={{ color: "var(--neutral-white)" }}>
                   {feature.description}
                 </p>
               </div>
@@ -438,12 +442,12 @@ function CTABanner() {
    Partners Section
    ======================================== */
 const PARTNERS = [
-  { src: "/partner_one.png", alt: "Partner 1" },
-  { src: "/partner_two.png", alt: "Partner 2" },
-  { src: "/partner_three.png", alt: "Partner 3" },
-  { src: "/partner_four.png", alt: "Partner 4" },
-  { src: "/partner_five.png", alt: "Partner 5" },
-  { src: "/partner_six.png", alt: "Partner 6" },
+  { src: "https://gacheruevans.github.io/DCK-Care/partner_one.png", alt: "Partner 1" },
+  { src: "https://gacheruevans.github.io/DCK-Care/partner_two.png", alt: "Partner 2" },
+  { src: "https://gacheruevans.github.io/DCK-Care/partner_three.png", alt: "Partner 3" },
+  { src: "https://gacheruevans.github.io/DCK-Care/partner_four.png", alt: "Partner 4" },
+  { src: "https://gacheruevans.github.io/DCK-Care/partner_five.png", alt: "Partner 5" },
+  { src: "https://gacheruevans.github.io/DCK-Care/partner_six.png", alt: "Partner 6" },
 ];
 
 function PartnersSection() {
@@ -488,7 +492,7 @@ function PartnersSection() {
           </div>
           <div className="relative w-full flex justify-center" style={{ borderTop: "1px solid var(--neutral-200)", marginTop: "2rem", paddingTop: "2rem" }}>
             <Image
-              src="/trusted_care.jpg"
+              src="https://gacheruevans.github.io/DCK-Care/trusted_care.jpg"
               alt="Trusted Care"
               width={600}
               height={120}

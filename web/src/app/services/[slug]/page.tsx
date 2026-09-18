@@ -47,7 +47,7 @@ export default async function ServicePage({
           { label: "Services", href: "/services" },
           { label: service.title },
         ]}
-        image="/services_shared_bg.jpg"
+        image="https://gacheruevans.github.io/DCK-Care/services_shared_bg.jpg"
       />
 
       {/* Service Detail */}

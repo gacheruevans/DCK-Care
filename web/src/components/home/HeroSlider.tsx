@@ -4,10 +4,10 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
 const HERO_IMAGES = [
-  { src: "/hero_image_one.jpg", alt: "DCK Care — Professional home care services" },
-  { src: "/hero_image_two.jpg", alt: "DCK Care — Compassionate caregivers" },
-  { src: "/hero_image_three.jpg", alt: "DCK Care — Supporting independence" },
-  { src: "/hero_image_four.jpg", alt: "DCK Care — Quality care in Nottingham" },
+  { src: "https://gacheruevans.github.io/DCK-Care/hero_image_one.jpg", alt: "DCK Care — Professional home care services" },
+  { src: "https://gacheruevans.github.io/DCK-Care/hero_image_two.jpg", alt: "DCK Care — Compassionate caregivers" },
+  { src: "https://gacheruevans.github.io/DCK-Care/hero_image_three.jpg", alt: "DCK Care — Supporting independence" },
+  { src: "https://gacheruevans.github.io/DCK-Care/hero_image_four.jpg", alt: "DCK Care — Quality care in Nottingham" },
 ];
 
 const SLIDE_INTERVAL = 5000; // 5 seconds per slide
@@ -63,12 +63,6 @@ export default function HeroSlider() {
           />
         </div>
       ))}
-
-      {/* Dark overlay for text readability */}
-      <div
-        className="absolute inset-0"
-        style={{ background: "linear-gradient(135deg, #4d585f79 0%, #4b586266 50%, #c4e1f866 100%)" }}
-      />
 
       {/* Slide indicators */}
       <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
