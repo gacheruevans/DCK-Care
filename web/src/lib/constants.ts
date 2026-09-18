@@ -178,7 +178,7 @@ export const SERVICES = [
     description:
       "Our complex care services are designed for individuals with multiple or challenging care needs, including learning disabilities, autism, and complex physical conditions. Using Positive Behaviour Support (PBS) and Active Support methodologies, we empower individuals to participate fully in their communities and lead fulfilling lives.",
     icon: "💪",
-    image: "https://gacheruevans.github.io/DCK-Care/painting_special_ten.jpg",
+    image: "https://gacheruevans.github.io/DCK-Care/personal_care_ten.jpg",
     color: "#E8913A",
     features: [
       "Positive Behaviour Support (PBS)",
