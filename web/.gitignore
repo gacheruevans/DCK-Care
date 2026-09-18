@@ -10,6 +10,11 @@
 !.yarn/releases
 !.yarn/versions
 
+#agents
+/agents
+../agents/
+../agents/*
+
 # testing
 /coverage
 
