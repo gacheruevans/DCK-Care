@@ -177,7 +177,7 @@ export default function AboutPage() {
                   </div>
                   <div className="relative rounded-2xl overflow-hidden group shadow-sm bg-neutral-100">
                     <Image
-                      src="https://gacheruevans.github.io/DCK-Care/personal_care_ten.jpeg"
+                      src="https://gacheruevans.github.io/DCK-Care/personal_care_ten.jpg"
                       alt="Compassionate Care in Action"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -199,7 +199,7 @@ export default function AboutPage() {
                 <div className="grid grid-rows-3 gap-3 sm:gap-4 h-full">
                   <div className="row-span-2 relative rounded-2xl overflow-hidden group shadow-sm bg-neutral-100">
                     <Image
-                      src="https://gacheruevans.github.io/DCK-Care/personal_care_eleven.jpeg"
+                      src="https://gacheruevans.github.io/DCK-Care/personal_care_eleven.jpg"
                       alt="Person-Centred Care Excellence"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
