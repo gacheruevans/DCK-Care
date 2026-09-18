@@ -8,6 +8,10 @@ const HERO_IMAGES = [
   { src: "https://gacheruevans.github.io/DCK-Care/hero_image_two.jpg", alt: "DCK Care — Compassionate caregivers" },
   { src: "https://gacheruevans.github.io/DCK-Care/hero_image_three.jpg", alt: "DCK Care — Supporting independence" },
   { src: "https://gacheruevans.github.io/DCK-Care/hero_image_four.jpg", alt: "DCK Care — Quality care in Nottingham" },
+  { src: "https://gacheruevans.github.io/DCK-Care/hero_image_five.jpg", alt: "DCK Care — Quality care in Nottingham" },
+  { src: "https://gacheruevans.github.io/DCK-Care/hero_image_six.jpg", alt: "DCK Care — Quality care in Nottingham" },
+  { src: "https://gacheruevans.github.io/DCK-Care/hero_image_seven.jpg", alt: "DCK Care — Quality care in Nottingham" },
+  { src: "https://gacheruevans.github.io/DCK-Care/hero_image_eight.jpg", alt: "DCK Care — Quality care in Nottingham" },
 ];
 
 const SLIDE_INTERVAL = 5000; // 5 seconds per slide
