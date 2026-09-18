@@ -25,6 +25,7 @@ export default function PageHero({
         background: image ? undefined : "linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)",
         paddingTop: "5rem",
         paddingBottom: "5rem",
+        textShadow: "0 2px 12px rgba(0, 0, 0, 0.8), 0 4px 18px rgba(0, 0, 0, 0.6)",
       }}
     >
       {/* Background Image & Overlay */}
@@ -37,12 +38,6 @@ export default function PageHero({
             priority
             className={`object-cover ${imageClassName}`}
             sizes="100vw"
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background: "linear-gradient(135deg, #4d585f79 0%, #4b586266 50%, #c4e1f866 100%)",
-            }}
           />
         </>
       )}

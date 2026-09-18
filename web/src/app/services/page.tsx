@@ -21,7 +21,7 @@ export default function ServicesPage() {
           { label: "Home", href: "/" },
           { label: "Services" },
         ]}
-        image="/services.jpg"
+        image="https://gacheruevans.github.io/DCK-Care/services.jpg"
         imageClassName="object-[center_80%]"
       />
 
