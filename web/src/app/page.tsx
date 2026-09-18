@@ -141,7 +141,7 @@ function AboutPreview() {
                 About DCK Care
               </span>
               <h2 style={{ color: "var(--secondary-light)" }}>Here to Serve With Compassion and Expertise</h2>
-              <p style={{ color: "var(--neutral-600)" }}>
+              <p className="text-md" style={{ color: "var(--neutral-600)" }}>
                 At DCK Care Ltd, we are committed to delivering professional home care services that go
                 beyond meeting basic needs. Our mission is to create a supportive environment where clients
                 feel valued, empowered, and cared for.

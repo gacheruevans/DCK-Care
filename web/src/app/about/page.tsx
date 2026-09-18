@@ -58,13 +58,13 @@ export default function AboutPage() {
                   <span style={{ color: "var(--secondary-light)" }}>Comprehensive Care Solutions</span>{" "}
                   with Unparalleled Expertise
                 </h2>
-                <p style={{ color: "var(--neutral-600)" }}>
+                <p className="text-md" style={{ color: "var(--neutral-600)" }}>
                   At DCK Care, we offer you the opportunity to embrace the life you deserve, whether
                   you&apos;re searching for the ideal support setting or comprehensive care for a loved one.
                   With us, it&apos;s about creating a supportive environment where you can explore life&apos;s
                   best moments, live on your terms, and pursue what brings you joy and purpose.
                 </p>
-                <p style={{ color: "var(--neutral-600)" }}>
+                <p className="text-md" style={{ color: "var(--neutral-600)" }}>
                   At DCK Care Ltd, we pride ourselves on having a dedicated team of professionals with
                   extensive experience in providing exceptional care services. Our team is carefully
                   selected, thoroughly trained, and equipped with the skills and expertise needed to meet
@@ -113,7 +113,7 @@ export default function AboutPage() {
                 >
                   <span className="text-4xl">{item.icon}</span>
                   <h3 className="text-xl font-semibold" style={{ color: "var(--primary)" }}>{item.title}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: "var(--neutral-600)" }}>
+                  <p className="text-md leading-relaxed" style={{ color: "var(--neutral-600)" }}>
                     {item.text}
                   </p>
                 </div>
@@ -133,7 +133,7 @@ export default function AboutPage() {
                   Our Approach
                 </span>
                 <h2 style={{ color: "var(--secondary-light)" }}>Person-Centred Care That Makes a Difference</h2>
-                <p style={{ color: "var(--neutral-600)" }}>
+                <p className="text-md" style={{ color: "var(--neutral-600)" }}>
                   We believe that every individual deserves care that is tailored to their unique needs,
                   preferences, and aspirations. Our person-centred approach ensures that each client is at the
                   heart of their care plan.
@@ -234,7 +234,7 @@ export default function AboutPage() {
                 <h2 className="text-white" style={{ fontSize: "clamp(1.5rem, 4vw, 2.25rem)", color: "var(--neutral-white)" }}>
                   Ready to Join Our Team?
                 </h2>
-                <p style={{ color: "rgba(255,255,255,0.8)" }}>
+                <p className="text-md" style={{ color: "rgba(255,255,255,0.8)" }}>
                   We&apos;re always looking for compassionate, dedicated individuals to join our growing team.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 mt-1">
